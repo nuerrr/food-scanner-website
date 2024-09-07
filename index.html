@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Scanner</title>
+    <link rel="icon" type="image\png" href="scanner.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="outside">
+        <h1 id="h1" class="H1">
+            Food Scanner
+        </h1>
+    </div>
+
+    <div class="page" id="page1">
+        <div class="container2">
+             <h2>Upload Image</h2>
+               <div id="dropArea" class="dropZone">
+                  <p id="insideBox">Drag & Drop a JPG image file here, or click <button id="uploadBtn" class="buttons">here</button> to select a file</p>
+                  <input type="file" accept="image/*"  id="fileUpload" class="fileUploadd">
+               </div>
+             <br>
+             <button id="cancelBtn" class="buttons">Cancel</button>
+             <button id="submitBtn" class="buttons" >Submit</button>
+             <br>
+             <br>
+        </div> 
+    </div>
+
+    <div class="page" id="page2" style="display: none;">
+      <div id="scannerContainer" style="display: none;">
+        <img id="uploadedImage" class="scanned-image" alt="Preview">
+        <div class="scanner"></div>
+      </div>
+
+      <div id="imageDisplay" style="display: none;">
+        <img id="finalImage" alt="Uploaded Image">
+        <br>
+        <br>
+        <p id="imageText">This is your uploaded image!</p>
+        <br>
+        <button id="goBackBtn">Go Back</button>
+      </div>
+    </div>
+
+    <script src="index.js"></script> 
+</body>
+</html>
